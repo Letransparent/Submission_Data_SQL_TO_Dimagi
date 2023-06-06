@@ -2,7 +2,7 @@
 USE [BIDFAES]
 GO
 
-/****** Object:  View [dbo].[V_Recrutement]    Script Date: 8/19/2022 11:18:30 AM ******/
+/****** Object:  View [dbo].[V_Benefice]    Script Date: 8/19/2022 11:18:30 AM ******/
 SET ANSI_NULLS ON
 GO
 
