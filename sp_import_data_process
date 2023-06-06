@@ -63,7 +63,7 @@ BEGIN
 	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RECRUTEMENT_TABLE]') AND type in (N'U'))
 	DROP TABLE [dbo].RECRUTEMENT_TABLE;
 	
-	SELECT TOP 5
+	SELECT
 	*
 	INTO RECRUTEMENT_TABLE
 	FROM [dbo].[V_Recrutement];
@@ -128,7 +128,7 @@ BEGIN
     SET @methodName= 'POST';   
     SET @SoapAction = 'https://www.commcarehq.org/a/api-test/receiver/submission/';    
     SET @UserName = 'wfleurimond@gheskio.org';     
-    SET @Password = 'Letransparent,01'; 
+    SET @Password = 'xxxxxxxxxxx'; 
 
 	--SELECT @RequestText;
 	exec [dbo].[sp_post_data_2_dimagi]  @RequestText,  @URI,  @methodName,    @SoapAction,   @UserName, @Password, @xmlOut out  ;
