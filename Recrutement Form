@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:vellum="http://commcarehq.org/xforms/vellum">
+	<h:head>
+		<h:title>Info Beneficiaire</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/4EFCC8A9-1AD5-4D7C-AFA1-17E0B922CCB5" uiVersion="1" version="1" name="Info Beneficiaire">
+					<g_indicateurs>
+						<ql_informations_relatives_aux_patients>
+							<site />
+							<clinique />
+							<code_projet />
+							<pat_net_id />
+							<prenom />
+							<nom />
+							<sexe />
+							<date_de_naissance />
+							<age />
+							<enceinte />
+							<piece />
+							<numero_identification />
+							<telephone />
+							<departement />
+							<commune />
+							<localite />
+							<adresse />
+						</ql_informations_relatives_aux_patients>
+						<ql_situation_sociale>
+							<Victime_Violence_Sex />
+							<Niveau_Etude />
+						</ql_situation_sociale>
+					</g_indicateurs>
+				</data>
+			</instance>
+			<bind vellum:nodeset="#form/g_indicateurs" nodeset="/data/g_indicateurs" relevant="false()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/site" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/site" type="xsd:string" required="true()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/clinique" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/clinique" type="xsd:string" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/code_projet" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/code_projet" type="xsd:string" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id" type="xsd:string" relevant="false()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/prenom" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/prenom" type="xsd:string" required="true()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/nom" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/nom" type="xsd:string" required="true()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/sexe" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/sexe" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance" type="xsd:date" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/age" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/age" type="xsd:int" required="true()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/enceinte" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/enceinte" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/piece" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/piece" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/numero_identification" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/numero_identification" type="xsd:string" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/telephone" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/telephone" type="xsd:string" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/departement" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/departement" type="xsd:string" required="false()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/commune" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/commune" type="xsd:string" required="false()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/localite" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/localite" type="xsd:string" required="true()" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_informations_relatives_aux_patients/adresse" nodeset="/data/g_indicateurs/ql_informations_relatives_aux_patients/adresse" type="xsd:string" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_situation_sociale" nodeset="/data/g_indicateurs/ql_situation_sociale" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_situation_sociale/Victime_Violence_Sex" nodeset="/data/g_indicateurs/ql_situation_sociale/Victime_Violence_Sex" />
+			<bind vellum:nodeset="#form/g_indicateurs/ql_situation_sociale/Niveau_Etude" nodeset="/data/g_indicateurs/ql_situation_sociale/Niveau_Etude" type="xsd:string" />
+			<itext>
+				<translation lang="fra" default="">
+					<text id="g_indicateurs-label">
+						<value>Indicateurs</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients-label">
+						<value>1-Demographie</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/site-label">
+						<value>Site</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/clinique-label">
+						<value>Clinique</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/code_projet-label">
+						<value>Code Projet</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id-label">
+						<value>PAT_NET_ID</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/prenom-label">
+						<value>1.6 Prénom</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/nom-label">
+						<value>1.7 Nom</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/sexe-label">
+						<value>1.8 Sexe</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/sexe-F-label">
+						<value>F</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/sexe-M-label">
+						<value>M</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance-label">
+						<value>1.9 Date de naissance</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/age-label">
+						<value>1.10 Age</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/enceinte-label">
+						<value>1.11 Enceinte</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/enceinte-OUI-label">
+						<value>OUI</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/enceinte-NON-label">
+						<value>NON</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/piece-label">
+						<value>1.12 Piece d'identification</value>
+						<value form="markdown">1.12 Piece d'identification</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/piece-CIN-label">
+						<value>CIN</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/piece-NIF-label">
+						<value>NIF</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/numero_identification-label">
+						<value>1.13 Numero (CIN/NIF)</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/telephone-label">
+						<value>Telephone</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/departement-label">
+						<value>1.14 Departement</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/commune-label">
+						<value>1.15 Commune</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/localite-label">
+						<value>1.16 Localité</value>
+					</text>
+					<text id="g_indicateurs/ql_informations_relatives_aux_patients/adresse-label">
+						<value>Adresse</value>
+					</text>
+					<text id="g_indicateurs/ql_situation_sociale-label">
+						<value>2- Situation sociale</value>
+					</text>
+					<text id="g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-label">
+						<value>2.1 Depuis le mois de juillet 2022, avez-vous ete expose a des situations de violence sexuelle ?</value>
+					</text>
+					<text id="g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-oui-label">
+						<value>Oui</value>
+					</text>
+					<text id="g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-non-label">
+						<value>Non</value>
+					</text>
+					<text id="g_indicateurs/ql_situation_sociale/Niveau_Etude-label">
+						<value>2.2 Niveau etude</value>
+					</text>
+				</translation>
+			</itext>
+		</model>
+	</h:head>
+	<h:body>
+		<group vellum:ref="#form/g_indicateurs" ref="/data/g_indicateurs">
+			<label ref="jr:itext('g_indicateurs-label')" />
+			<group vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients" appearance="field-list">
+				<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients-label')" />
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/site" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/site">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/site-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/clinique" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/clinique">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/clinique-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/code_projet" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/code_projet">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/code_projet-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/pat_net_id-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/prenom" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/prenom">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/prenom-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/nom" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/nom">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/nom-label')" />
+				</input>
+				<select1 vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/sexe" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/sexe">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/sexe-label')" />
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/sexe-F-label')" />
+						<value>F</value>
+					</item>
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/sexe-M-label')" />
+						<value>M</value>
+					</item>
+				</select1>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/date_de_naissance-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/age" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/age">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/age-label')" />
+				</input>
+				<select1 vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/enceinte" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/enceinte">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/enceinte-label')" />
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/enceinte-OUI-label')" />
+						<value>OUI</value>
+					</item>
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/enceinte-NON-label')" />
+						<value>NON</value>
+					</item>
+				</select1>
+				<select1 vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/piece" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/piece">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/piece-label')" />
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/piece-CIN-label')" />
+						<value>CIN</value>
+					</item>
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/piece-NIF-label')" />
+						<value>NIF</value>
+					</item>
+				</select1>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/numero_identification" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/numero_identification" appearance="numeric">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/numero_identification-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/telephone" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/telephone" appearance="numeric">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/telephone-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/departement" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/departement">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/departement-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/commune" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/commune">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/commune-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/localite" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/localite">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/localite-label')" />
+				</input>
+				<input vellum:ref="#form/g_indicateurs/ql_informations_relatives_aux_patients/adresse" ref="/data/g_indicateurs/ql_informations_relatives_aux_patients/adresse">
+					<label ref="jr:itext('g_indicateurs/ql_informations_relatives_aux_patients/adresse-label')" />
+				</input>
+			</group>
+			<group vellum:ref="#form/g_indicateurs/ql_situation_sociale" ref="/data/g_indicateurs/ql_situation_sociale" appearance="field-list">
+				<label ref="jr:itext('g_indicateurs/ql_situation_sociale-label')" />
+				<select1 vellum:ref="#form/g_indicateurs/ql_situation_sociale/Victime_Violence_Sex" ref="/data/g_indicateurs/ql_situation_sociale/Victime_Violence_Sex">
+					<label ref="jr:itext('g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-label')" />
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-oui-label')" />
+						<value>oui</value>
+					</item>
+					<item>
+						<label ref="jr:itext('g_indicateurs/ql_situation_sociale/Victime_Violence_Sex-non-label')" />
+						<value>non</value>
+					</item>
+				</select1>
+				<input vellum:ref="#form/g_indicateurs/ql_situation_sociale/Niveau_Etude" ref="/data/g_indicateurs/ql_situation_sociale/Niveau_Etude">
+					<label ref="jr:itext('g_indicateurs/ql_situation_sociale/Niveau_Etude-label')" />
+				</input>
+			</group>
+		</group>
+	</h:body>
+</h:html>
