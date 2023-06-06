@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:orx="http://openrosa.org/jr/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:vellum="http://commcarehq.org/xforms/vellum">
+	<h:head>
+		<h:title>Benefices</h:title>
+		<model>
+			<instance>
+				<data xmlns:jrm="http://dev.commcarehq.org/jr/xforms" xmlns="http://openrosa.org/formdesigner/A2C1363F-FB63-4ED6-B5AC-9EE1665276DB" uiVersion="1" version="1" name="Benefices">
+					<BeneficeID />
+					<Benefice />
+					<datedecision />
+					<Expediteur />
+					<Confirme />
+					<DateConfirmation />
+					<DateConfirmationSystem />
+					<ConfirmationUser />
+					<CreationDate />
+					<CreationUser />
+					<UpdateDate />
+					<UpdateUser />
+				</data>
+			</instance>
+			<bind vellum:nodeset="#form/BeneficeID" nodeset="/data/BeneficeID" type="xsd:int" relevant="false()" />
+			<bind vellum:nodeset="#form/Benefice" nodeset="/data/Benefice" type="xsd:string" />
+			<bind vellum:nodeset="#form/datedecision" nodeset="/data/datedecision" type="xsd:date" />
+			<bind vellum:nodeset="#form/Expediteur" nodeset="/data/Expediteur" type="xsd:string" />
+			<bind vellum:nodeset="#form/Confirme" nodeset="/data/Confirme" type="xsd:string" />
+			<bind vellum:nodeset="#form/DateConfirmation" nodeset="/data/DateConfirmation" type="xsd:date" />
+			<bind vellum:nodeset="#form/DateConfirmationSystem" nodeset="/data/DateConfirmationSystem" type="xsd:dateTime" />
+			<bind vellum:nodeset="#form/ConfirmationUser" nodeset="/data/ConfirmationUser" type="xsd:string" />
+			<bind vellum:nodeset="#form/CreationDate" nodeset="/data/CreationDate" type="xsd:dateTime" />
+			<bind vellum:nodeset="#form/CreationUser" nodeset="/data/CreationUser" type="xsd:string" />
+			<bind vellum:nodeset="#form/UpdateDate" nodeset="/data/UpdateDate" type="xsd:dateTime" />
+			<bind vellum:nodeset="#form/UpdateUser" nodeset="/data/UpdateUser" type="xsd:string" />
+			<itext>
+				<translation lang="fra" default="">
+					<text id="BeneficeID-label">
+						<value>BeneficeID</value>
+					</text>
+					<text id="Benefice-label">
+						<value>Benefice</value>
+					</text>
+					<text id="datedecision-label">
+						<value>DateDecision</value>
+					</text>
+					<text id="Expediteur-label">
+						<value>Expediteur</value>
+					</text>
+					<text id="Confirme-label">
+						<value>Confirme</value>
+					</text>
+					<text id="DateConfirmation-label">
+						<value>DateConfirmation</value>
+					</text>
+					<text id="DateConfirmationSystem-label">
+						<value>DateConfirmationSystem</value>
+					</text>
+					<text id="ConfirmationUser-label">
+						<value>ConfirmationUser</value>
+					</text>
+					<text id="CreationDate-label">
+						<value>CreationDate</value>
+					</text>
+					<text id="CreationUser-label">
+						<value>CreationUser</value>
+					</text>
+					<text id="UpdateDate-label">
+						<value>UpdateDate</value>
+					</text>
+					<text id="UpdateUser-label">
+						<value>UpdateUser</value>
+					</text>
+				</translation>
+			</itext>
+		</model>
+	</h:head>
+	<h:body>
+		<input vellum:ref="#form/BeneficeID" ref="/data/BeneficeID">
+			<label ref="jr:itext('BeneficeID-label')" />
+		</input>
+		<input vellum:ref="#form/Benefice" ref="/data/Benefice">
+			<label ref="jr:itext('Benefice-label')" />
+		</input>
+		<input vellum:ref="#form/datedecision" ref="/data/datedecision">
+			<label ref="jr:itext('datedecision-label')" />
+		</input>
+		<input vellum:ref="#form/Expediteur" ref="/data/Expediteur">
+			<label ref="jr:itext('Expediteur-label')" />
+		</input>
+		<input vellum:ref="#form/Confirme" ref="/data/Confirme">
+			<label ref="jr:itext('Confirme-label')" />
+		</input>
+		<input vellum:ref="#form/DateConfirmation" ref="/data/DateConfirmation">
+			<label ref="jr:itext('DateConfirmation-label')" />
+		</input>
+		<input vellum:ref="#form/DateConfirmationSystem" ref="/data/DateConfirmationSystem">
+			<label ref="jr:itext('DateConfirmationSystem-label')" />
+		</input>
+		<input vellum:ref="#form/ConfirmationUser" ref="/data/ConfirmationUser">
+			<label ref="jr:itext('ConfirmationUser-label')" />
+		</input>
+		<input vellum:ref="#form/CreationDate" ref="/data/CreationDate">
+			<label ref="jr:itext('CreationDate-label')" />
+		</input>
+		<input vellum:ref="#form/CreationUser" ref="/data/CreationUser">
+			<label ref="jr:itext('CreationUser-label')" />
+		</input>
+		<input vellum:ref="#form/UpdateDate" ref="/data/UpdateDate">
+			<label ref="jr:itext('UpdateDate-label')" />
+		</input>
+		<input vellum:ref="#form/UpdateUser" ref="/data/UpdateUser">
+			<label ref="jr:itext('UpdateUser-label')" />
+		</input>
+	</h:body>
+</h:html>
